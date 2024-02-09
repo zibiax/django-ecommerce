@@ -4,7 +4,7 @@ from django.contrib.auth.hashers import check_password, make_password
 from .models import Customer
 from django.views import View
 from .models import Products, Order, Category
-from store.middlewares.auth import auth_middleware
+from .middlewares.auth import auth_middleware
 
 class Cart(View):
     def get(self , request):
